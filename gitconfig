@@ -55,6 +55,9 @@
   yesterday = log --since yesterday --until=midnight --color --graph \
             --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)[%an]%Creset' \
             --abbrev-commit
+  history = log --graph --pretty=format:'%C(yellow)%h%Creset \
+            -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' \
+            --abbrev-commit --date=short --date-order -n30
 
   remotes  = remote -v
   branches = branch -a
