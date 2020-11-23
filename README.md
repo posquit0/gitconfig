@@ -8,6 +8,7 @@
 $ cd ~
 $ git clone --recursive https://github.com/posquit0/gitconfig ~/.git
 $ ln -s .git/gitconfig .gitconfig
+$ cp .git/gitconfig.local .gitconfig.local
 ```
 
 

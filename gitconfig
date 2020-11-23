@@ -1,0 +1,42 @@
+# vim: set ft=gitconfig:
+# .gitconfig
+#
+# Maintained by Byungjin Park <posquit0.bj@gmail.com>
+# https://www.posquit0.com/
+
+
+[core]
+  editor = vim
+[help]
+  # Automatically correct and execute mistyped commands after waiting for the given number of deciseconds (0.1 sec).
+  autocorrect = 30
+
+
+[color]
+  # Determines the default value for variables such as `color.diff` and `color.grep` that control the use of color per command family.
+  ui = auto
+[column]
+  ui = never
+
+
+[push]
+  # Push should only push current branch, not all branches
+  default = current
+
+
+[alias]
+  today   = log --since=midnight --color --graph \
+            --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)[%an]%Creset' \
+            --abbrev-commit
+  yesterday = log --since yesterday --until=midnight --color --graph \
+            --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)[%an]%Creset' \
+            --abbrev-commit
+
+  remotes  = remote -v
+  branches = branch -a
+
+
+[include]
+  # Include external gitconfig file (requires git 1.7.10+)
+  # Typically, user.name and user.email is configured.
+  path = ~/.gitconfig.local
