@@ -17,11 +17,25 @@
   format = man
 
 
+[column]
+  ui = never
 [color]
   # Determines the default value for variables such as `color.diff` and `color.grep` that control the use of color per command family.
   ui = auto
-[column]
-  ui = never
+[color "branch"]
+  current = yellow bold
+  local   = green bold
+  remote  = cyan bold
+[color "diff"]
+  meta       = yellow bold
+  frag       = magenta bold
+  old        = red bold
+  new        = green bold
+  whitespace = red reverse
+[color "status"]
+  added     = green bold
+  changed   = yellow bold
+  untracked = red bold
 
 
 [merge]
