@@ -21,6 +21,9 @@
   ui = never
 
 
+[merge]
+  # Controls which merge tool is used by git-merge.
+  tool = vimdiff
 [push]
   # Push should only push current branch, not all branches.
   default = current
