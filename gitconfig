@@ -7,6 +7,9 @@
 
 [core]
   editor = vim
+[init]
+  # Override the default branch name.
+  defaultBranch = main
 [help]
   # Automatically correct and execute mistyped commands after waiting for the given number of deciseconds (0.1 sec).
   autocorrect = 30
@@ -27,6 +30,8 @@
 [push]
   # Push should only push current branch, not all branches.
   default = current
+  # Enable `--follow-tags` option by default.
+  followTags = true
 
 
 [alias]
