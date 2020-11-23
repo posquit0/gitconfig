@@ -10,6 +10,8 @@
 [help]
   # Automatically correct and execute mistyped commands after waiting for the given number of deciseconds (0.1 sec).
   autocorrect = 30
+  # Override the default help format used by `git help`.
+  format = man
 
 
 [color]
@@ -20,7 +22,7 @@
 
 
 [push]
-  # Push should only push current branch, not all branches
+  # Push should only push current branch, not all branches.
   default = current
 
 
@@ -37,6 +39,6 @@
 
 
 [include]
-  # Include external gitconfig file (requires git 1.7.10+)
+  # Include external gitconfig file (requires git 1.7.10+).
   # Typically, user.name and user.email is configured.
   path = ~/.gitconfig.local
