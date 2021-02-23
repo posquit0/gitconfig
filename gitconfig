@@ -68,7 +68,9 @@
   branches = branch -a
 
 
+# Include external gitconfig file (requires git 1.7.10+).
+# Typically, user.name and user.email is configured.
 [include]
-  # Include external gitconfig file (requires git 1.7.10+).
-  # Typically, user.name and user.email is configured.
-  path = ~/.gitconfig.local
+  path = ~/.git/user.default.gitconfig
+[includeIf "gitdir:~/workspace/daangn/"]
+  path = ~/.git/user.claud.gitconfig
