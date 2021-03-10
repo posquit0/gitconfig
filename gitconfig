@@ -15,6 +15,8 @@
   autocorrect = 30
   # Override the default help format used by `git help`.
   format = man
+[gpg]
+  program = gpg
 
 
 [column]
@@ -73,4 +75,6 @@
 [include]
   path = ~/.git/user.default.gitconfig
 [includeIf "gitdir:~/workspace/daangn/"]
-  path = ~/.git/user.claud.gitconfig
+  path = ~/.git/user.daangn.gitconfig
+[includeIf "gitdir:~/workspace/karrotpay/"]
+  path = ~/.git/user.karrotpay.gitconfig

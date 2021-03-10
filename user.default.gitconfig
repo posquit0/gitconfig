@@ -8,3 +8,10 @@
 [user]
   name = Byungjin Park
   email = posquit0.bj@gmail.com
+  signingKey = 40965A31
+
+[commit]
+  gpgsign = true
+
+[push]
+  gpgsign = if-asked
