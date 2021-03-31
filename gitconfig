@@ -48,6 +48,8 @@
   default = current
   # Enable `--follow-tags` option by default.
   followTags = true
+[pull]
+  rebase = true
 [filter "lfs"]
   clean    = git-lfs clean -- %f
   smudge   = git-lfs smudge -- %f
