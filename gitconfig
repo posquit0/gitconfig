@@ -58,12 +58,15 @@
 
 
 [alias]
-  today   = log --since=midnight --color --graph \
+  today = log --since=midnight --color --graph \
             --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)[%an]%Creset' \
             --abbrev-commit
   yesterday = log --since yesterday --until=midnight --color --graph \
             --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)[%an]%Creset' \
             --abbrev-commit
+  graph = log --graph --abbrev-commit --decorate --all \
+    --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) \
+    - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'
   history = log --graph --pretty=format:'%C(yellow)%h%Creset \
             -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' \
             --abbrev-commit --date=short --date-order -n30
