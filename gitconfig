@@ -73,6 +73,8 @@
 
   remotes  = remote -v
   branches = branch -a
+  # Clean up local git branches that are tracking remote branches that no longer exist.
+  gone = ! "git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D"
 
 
 # Include external gitconfig file (requires git 1.7.10+).
