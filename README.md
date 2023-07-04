@@ -1,4 +1,5 @@
 # gitconfig
+
 📝 Git configurations
 
 
@@ -24,19 +25,20 @@ Please use the [issue tracker](https://github.com/posquit0/gitconfig/issues) to 
 ## Self Promotion
 
 Like this project? Please give it a ★  on [GitHub](https://github.com/posquit0/gitconfig)! It helps this project **a lot**.
-And if you're feeling especially charitable, follow [posquit0](https://posquit0.com) on [GitHub](https://github.com/posquit0).
+And if you're feeling especially charitable, follow [posquit0](https://www.posquit0.com) on [GitHub](https://github.com/posquit0).
 
 
 ## See Also
 
+- [brewfile](https://github.com/posquit0/brewfile) - Brewfile to install softwares in macOS for engineers.
 - [dotfiles](https://github.com/posquit0/dotfiles) - Awesome configurations for the development environments.
+- [tmux-conf](https://github.com/posquit0/tmux-conf) - TMUX Configuration for nerds with tpm.
 - [vimrc](https://github.com/posquit0/vimrc) - Vim Configuration for nerds with vim-plug.
 - [zsh](https://github.com/posquit0/zshrc) - Zsh Configuration for nerds with zplug.
-- [tmux-conf](https://github.com/posquit0/tmux-conf) - TMUX Configuration for nerds with tpm.
 
 
 ## License
 
 Provided under the terms of the [MIT License](https://github.com/posquit0/gitconfig/blob/main/LICENSE).
 
-Copyright © 2014-2020, [Byungjin Park](https://www.posquit0.com).
+Copyright © 2014-2023, [Byungjin Park](https://www.posquit0.com).
