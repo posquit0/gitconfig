@@ -34,7 +34,7 @@ And if you're feeling especially charitable, follow [posquit0](https://www.posqu
 - [dotfiles](https://github.com/posquit0/dotfiles) - Awesome configurations for the development environments.
 - [tmux-conf](https://github.com/posquit0/tmux-conf) - TMUX Configuration for nerds with tpm.
 - [vimrc](https://github.com/posquit0/vimrc) - Vim Configuration for nerds with vim-plug.
-- [zsh](https://github.com/posquit0/zshrc) - Zsh Configuration for nerds with zplug.
+- [zshrc](https://github.com/posquit0/zshrc) - Zsh Configuration for nerds with zplug.
 
 
 ## License
