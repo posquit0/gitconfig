@@ -7,9 +7,6 @@
 
 [core]
   editor = vim
-[init]
-  # Override the default branch name.
-  defaultBranch = main
 [help]
   # Automatically correct and execute mistyped commands after waiting for the given number of deciseconds (0.1 sec).
   autocorrect = 30
@@ -40,9 +37,13 @@
   untracked = red bold
 
 
+[init]
+  # Override the default branch name.
+  defaultBranch = main
 [merge]
   # Controls which merge tool is used by git-merge.
   tool = vimdiff
+  conflictstyle = diff3
 [push]
   # Push should only push current branch, not all branches.
   default = current
@@ -56,29 +57,24 @@
   process  = git-lfs filter-process
   required = true
 
-
-[alias]
-  today = log --since=midnight --color --graph \
-            --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)[%an]%Creset' \
-            --abbrev-commit
-  yesterday = log --since yesterday --until=midnight --color --graph \
-            --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)[%an]%Creset' \
-            --abbrev-commit
-  graph = log --graph --abbrev-commit --decorate --all \
-    --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) \
-    - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'
-  history = log --graph --pretty=format:'%C(yellow)%h%Creset \
-            -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' \
-            --abbrev-commit --date=short --date-order -n30
-
-  remotes  = remote -v
-  branches = branch -a
-  # Clean up local git branches that are tracking remote branches that no longer exist.
-  gone = ! "git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D"
+[include]
+  path = ~/.git/aliases.gitconfig
 
 
-# Include external gitconfig file (requires git 1.7.10+).
-# Typically, user.name and user.email is configured.
+###################################################
+# Integrations
+###################################################
+
+[include]
+  path = ~/.git/integration.delta.gitconfig
+[include]
+  path = ~/.git/integration.delta.themes.gitconfig
+
+
+###################################################
+# Users
+###################################################
+
 [include]
   path = ~/.git/user.default.gitconfig
 [includeIf "gitdir:~/workspace/daangn/"]

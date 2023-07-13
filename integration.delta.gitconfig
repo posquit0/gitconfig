@@ -1,0 +1,35 @@
+# vim: set ft=gitconfig:
+# integration.delta.gitconfig
+#
+# Maintained by Byungjin Park <posquit0.bj@gmail.com>
+# https://www.posquit0.com/
+
+
+[core]
+  pager = delta 
+
+[delta]
+  features = decorations 
+
+  # Set to `true` if you're in a terminal with a light background.
+  light = false
+  # Display line numbers next to the diff.
+  line-numbers = true
+  # Display diffs in side-by-side layout.
+  side-by-side = true
+
+  hyperlinks = true
+  hyperlinks-file-link-format = "vscode://file/{path}:{line}"
+  # Use `n` and `N` to move between diff sections.
+  navigate = true
+
+
+[interactive]
+  # Pipe the diff through the shell command defined by this configuration on interactive command (such as git add --patch).
+  diffFilter = delta --color-only --features=interactive
+
+[merge]
+  conflictstyle = diff3
+
+[diff]
+  colorMoved = default
