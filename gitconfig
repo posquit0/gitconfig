@@ -58,7 +58,7 @@
   required = true
 
 [include]
-  path = ~/.git/aliases.gitconfig
+  path = ~/.gitconfig.d/aliases.gitconfig
 
 
 ###################################################
@@ -66,9 +66,9 @@
 ###################################################
 
 [include]
-  path = ~/.git/integration.delta.gitconfig
+  path = ~/.gitconfig.d/integration.delta.gitconfig
 [include]
-  path = ~/.git/integration.delta.themes.gitconfig
+  path = ~/.gitconfig.d/integration.delta.themes.gitconfig
 
 
 ###################################################
@@ -76,8 +76,8 @@
 ###################################################
 
 [include]
-  path = ~/.git/user.default.gitconfig
+  path = ~/.gitconfig.d/user.default.gitconfig
 [includeIf "gitdir:~/workspace/daangn/"]
-  path = ~/.git/user.daangn.gitconfig
+  path = ~/.gitconfig.d/user.daangn.gitconfig
 [includeIf "gitdir:~/workspace/karrotpay/"]
-  path = ~/.git/user.karrotpay.gitconfig
+  path = ~/.gitconfig.d/user.karrotpay.gitconfig
