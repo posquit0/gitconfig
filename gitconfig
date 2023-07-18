@@ -6,7 +6,7 @@
 
 
 [core]
-  editor = vim
+  editor = nvim
 [help]
   # Automatically correct and execute mistyped commands after waiting for the given number of deciseconds (0.1 sec).
   autocorrect = 30
@@ -51,6 +51,9 @@
   followTags = true
 [pull]
   rebase = true
+[rebase]
+  # Automatically create a temporary stash entry before the operation begins, and apply it after the operation ends.
+  autostash = true
 [filter "lfs"]
   clean    = git-lfs clean -- %f
   smudge   = git-lfs smudge -- %f
