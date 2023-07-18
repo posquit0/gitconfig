@@ -54,6 +54,9 @@
 [rebase]
   # Automatically create a temporary stash entry before the operation begins, and apply it after the operation ends.
   autostash = true
+[status]
+  # Enable the submodule summary and show a summary of commits for modified submodules
+  submoduleSummary = true
 [filter "lfs"]
   clean    = git-lfs clean -- %f
   smudge   = git-lfs smudge -- %f
