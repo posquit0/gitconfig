@@ -1,0 +1,17 @@
+# vim: set ft=gitconfig:
+# user.dunamu.gitconfig
+#
+# Maintained by Byungjin Park <posquit0.bj@gmail.com>
+# https://www.posquit0.com/
+
+
+[user]
+  name = Byungjin Park
+  email = beejay@dunamu.com
+  signingKey = 710205E2
+
+[commit]
+  gpgsign = true
+
+[push]
+  gpgsign = if-asked

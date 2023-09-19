@@ -83,6 +83,8 @@
 
 [include]
   path = ~/.gitconfig.d/user.default.gitconfig
+[includeIf "gitdir:~/workspace/dunamu/"]
+  path = ~/.gitconfig.d/user.dunamu.gitconfig
 [includeIf "gitdir:~/workspace/daangn/"]
   path = ~/.gitconfig.d/user.daangn.gitconfig
 [includeIf "gitdir:~/workspace/karrotpay/"]
