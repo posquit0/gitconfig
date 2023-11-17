@@ -8,7 +8,7 @@
 [user]
   name = Byungjin Park
   email = beejay@dunamu.com
-  signingKey = 710205E2
+  signingKey = 4BA7C793
 
 [commit]
   gpgsign = true
