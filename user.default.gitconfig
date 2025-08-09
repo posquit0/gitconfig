@@ -8,10 +8,16 @@
 [user]
   name = Byungjin Park
   email = posquit0.bj@gmail.com
-  signingKey = 40965A31
+  signingKey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICrWHddhF+JxdkYZf0bt9oj8Gm2gC5T/5usIiunDlUef
 
 [commit]
   gpgsign = true
 
 [push]
   gpgsign = if-asked
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
