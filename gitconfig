@@ -10,8 +10,17 @@
 [help]
   # Show the suggested command for a mistyped command and prompt for confirmation to run it.
   autocorrect = prompt
+  # Override the default help format used by `git help`.
+  format = man
+[gpg]
+  program = gpg
+
+
 [column]
   # Show listing output (branch, tag, status) in columns when writing to a terminal.
+  ui = auto
+[color]
+  # Determines the default value for variables such as `color.diff` and `color.grep` that control the use of color per command family.
   ui = auto
 [color "branch"]
   current = yellow bold
