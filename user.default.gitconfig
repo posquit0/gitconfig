@@ -13,6 +13,10 @@
 [commit]
   gpgsign = true
 
+[tag]
+  # Sign annotated tags by default (git >= 2.23).
+  gpgsign = true
+
 [push]
   gpgsign = if-asked
 
