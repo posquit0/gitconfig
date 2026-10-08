@@ -7,6 +7,7 @@
 
 [core]
   editor = nvim
+  attributesFile = ~/.gitconfig.d/attributes
 [help]
   # Show the suggested command for a mistyped command and prompt for confirmation to run it.
   autocorrect = prompt
@@ -91,6 +92,10 @@
   mnemonicPrefix = true
   # Detect renamed files (and copies).
   renames = copies
+[diff "gpg"]
+  textconv = gpg --quiet --decrypt
+  # Avoid storing decrypted contents in Git's textconv cache.
+  cachetextconv = false
 [status]
   # Enable the submodule summary and show a summary of commits for modified submodules
   submoduleSummary = true
